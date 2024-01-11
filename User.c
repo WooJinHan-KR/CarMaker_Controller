@@ -206,6 +206,7 @@ User_ScanCmdLine (int argc, char **argv)
 int
 User_Init (void)
 {
+    RSDS_Init();
     return 0;
 }
 
@@ -387,6 +388,7 @@ User_TestRun_Start_atBegin (void)
 int
 User_TestRun_Start_atEnd (void)
 {
+    RSDS_Start();
 #if defined(XENO)
     IOConf_DeclQuants();
 #endif
@@ -792,5 +794,6 @@ User_End (void)
 void
 User_Cleanup (void)
 {
+    RSDS_Exit();
 }
 
