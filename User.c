@@ -87,10 +87,11 @@
 #include <Drivman.h>
 #include <ADASRP.h>
 
-#include "rsds-client-camera.h"
-
 #include "IOVec.h"
 #include "User.h"
+#include "pid_controller.h"
+#include "rsds-client-camera.h"
+
 
 #include "WooJin.h"
 /* @@PLUGIN-BEGIN-INCLUDE@@ - Automatically generated code - don't edit! */
