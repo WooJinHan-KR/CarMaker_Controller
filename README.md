@@ -31,9 +31,27 @@ RSDS_Exit();
 }
 
 ```
-3.  Modiy Makefile 
+3.  Modiy Makefile
+
 ```
-Makefile
+
 OBJS =	CM_Main.o CM_Vehicle.o User.o IO.o rsds-client-camera.o
 
 ```
+
+4.  Build User.c
+In MSYS 2023
+
+```
+cd :C/CM_Projects/{Your_ProjectFoldername}/src/
+make
+```
+
+5.  Connect with CarMaker
+* CarMakerGUI > Application > Configuration/Status
+* Click the Folder ICON
+* choose file on C:/CM_Projects/{Your_ProjectFolder}/src/CarMaker.win64.exe
+* OK
+* Start & Connect
+* If you edit some code and finish to build, Disconnect CarMaker.win64.exe and reconnect
+
