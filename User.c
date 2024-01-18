@@ -89,11 +89,9 @@
 
 #include "IOVec.h"
 #include "User.h"
-#include "pid_controller.h"
+#include "PIDcontroller.h"
 #include "rsds-client-camera.h"
 
-
-#include "WooJin.h"
 /* @@PLUGIN-BEGIN-INCLUDE@@ - Automatically generated code - don't edit! */
 /* @@PLUGIN-END@@ */
 
@@ -217,7 +215,6 @@ int
 User_Register (void)
 {
 
-    VehicleControl_Register_WooJin();
     /* @@PLUGIN-BEGIN-REGISTER@@ - Automatically generated code - don't edit! */
     /* @@PLUGIN-END@@ */
 
